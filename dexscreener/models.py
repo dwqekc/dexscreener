@@ -56,6 +56,7 @@ class TokenPair(BaseModel):
     price_change: PriceChangePeriods = Field(..., alias="priceChange")
     liquidity: Optional[Liquidity] = None
     fdv: Optional[float] = 0.0
+    info: Optional[dict] = None
     pair_created_at: Optional[dt.datetime] = Field(None, alias="pairCreatedAt")
 
 
